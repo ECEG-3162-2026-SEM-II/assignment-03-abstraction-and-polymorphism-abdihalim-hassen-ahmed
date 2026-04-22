@@ -1,14 +1,17 @@
-package com.jju;
-
+// src/SmartDevice.java
 public abstract class SmartDevice {
-    private String name;
+    private String name; // encapsulated
 
+    // Constructor
     public SmartDevice(String name) {
         this.name = name;
     }
 
-    public String getName() { return name; }
+    // Getter for subclasses
+    public String getName() {
+        return name;
+    }
 
-    // This is the "Contract" - Every device MUST have an activate method
+    // Abstract method (no body)
     public abstract void activate();
 }
