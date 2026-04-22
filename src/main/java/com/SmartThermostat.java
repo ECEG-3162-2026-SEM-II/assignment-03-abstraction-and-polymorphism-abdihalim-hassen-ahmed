@@ -1,4 +1,3 @@
- // src/SmartThermostat.java
 public class SmartThermostat extends SmartDevice {
 
     public SmartThermostat(String name) {
